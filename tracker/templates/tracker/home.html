@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'tracker:home' %}">مدیریت مصرف دارو</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'tracker:add_record' %}">ثبت مصرف</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'tracker:report' %}">گزارش</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خانه</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>خوش آمدید!</h1>
+    <p>وب‌اپلیکیشن مدیریت مصرف دارو</p>
+    <a href="{% url 'tracker:add_record' %}">ثبت مصرف دارو</a>
+    <a href="{% url 'tracker:report' %}">مشاهده گزارش</a>
+</body>
+</html>
